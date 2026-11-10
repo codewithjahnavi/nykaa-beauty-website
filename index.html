@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nykaa Beauty Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Nykaa<span>.</span></div>
+
+        <nav>
+            <a href="#">Makeup</a>
+            <a href="#">Skin</a>
+            <a href="#">Hair</a>
+            <a href="#">Bath & Body</a>
+            <a href="#">Fragrance</a>
+        </nav>
+
+       <div class="header-icons">
+    <input type="text" id="searchInput" placeholder="Search products...">
+    <span>♡</span>
+    <a href="cart.html">
+        <span>🛍️</span>
+    </a>
+</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Beauty Begins Here</h1>
+            <p>Discover your favourite beauty products</p>
+            <button onclick="document.querySelector('.products').scrollIntoView({behavior: 'smooth'})">
+    SHOP NOW
+</button>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <h2>Shop By Category</h2>
+
+        <div class="category-container">
+            <a href="#categories">Makeup</a>
+           <a href="#categories">Skin</a>
+<a href="#categories">Hair</a>
+<a href="#categories">Bath & Body</a>
+<a href="#categories">Fragrance</a>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products">
+        <h2>Best Sellers</h2>
+
+        <div class="product-container">
+
+            <div class="product-card" data-category="makeup">
+                <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=400&q=80" alt="Lipstick">
+                 <button class="wishlist-btn">♡</button>
+                <span class="discount-badge">20% OFF</span>
+                <h3><a href="product.html">Matte Lipstick</a></h3>
+                <p>
+    <span class="old-price">₹499</span>
+    <span class="new-price">₹399</span>
+</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="skincare">
+                <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=400&q=80" alt="Skincare">
+                 <button class="wishlist-btn">♡</button>
+                <span class="discount-badge">15% OFF</span>
+                <h3><a href="moisturizer.html">Face Moisturizer</a></h3>
+                <p>
+    <span class="old-price">₹599</span>
+    <span class="new-price">₹509</span>
+</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="makeup">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=400&q=80" alt="Beauty products">
+                 <button class="wishlist-btn">♡</button>
+                <span class="discount-badge">25% OFF</span>
+                <h3><a href="beauty.html">Beauty Essentials</a></h3>
+                <p>
+    <span class="old-price">₹799</span>
+    <span class="new-price">₹599</span>
+</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="haircare">
+    <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=400&q=80" alt="Haircare">
+    <button class="wishlist-btn">♡</button>
+    <span class="discount-badge">10% OFF</span>
+    <h3><a href="haircare.html">Hair Care Shampoo</a></h3>
+    <p>
+    <span class="old-price">₹399</span>
+    <span class="new-price">₹359</span>
+</p>
+    <button>Add to Cart</button>
+</div>
+<div class="product-card" data-category="fragrance">
+    <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=400&q=80" alt="Perfume">
+    <button class="wishlist-btn">♡</button>
+    <span class="discount-badge">30% OFF</span>
+   <h3><a href="perfume.html">Luxury Perfume</a></h3>
+    <p>
+    <span class="old-price">₹699</span>
+    <span class="new-price">₹489</span>
+</p>
+    <button>Add to Cart</button>
+</div>
+
+        </div>
+    </section>
+<button id="backToTop">↑ Back to Top</button>
+    
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>Nykaa<span>.</span></h2>
+            <p>Your beauty, our passion.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="#categories">Shop by Category</a>
+            <a href="#products">Best Sellers</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Customer Care</h3>
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>Help & Support</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Nykaa Beauty Store | Created by Jahnavi</p>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

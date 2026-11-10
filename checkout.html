@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nykaa - Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="cart-section">
+        <h1>Checkout 💗</h1>
+
+        <form id="checkoutForm">
+            <h3>Delivery Details</h3>
+
+            <input type="text" id="customerName" placeholder="Full Name" required>
+
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+
+            <textarea id="address" placeholder="Full Address" required></textarea>
+
+            <input type="text" id="city" placeholder="City" required>
+
+            <input type="text" id="pincode" placeholder="PIN Code" required>
+
+            <h3>Payment Method</h3>
+
+            <select id="paymentMethod" required>
+                <option value="">Select Payment Method</option>
+                <option value="Cash on Delivery">Cash on Delivery</option>
+                <option value="UPI">UPI</option>
+            </select>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
